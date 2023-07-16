@@ -1,3 +1,5 @@
+<!-- log in file -->
+
 <?php
 
     $dsn = 'mysql:host=localhost;dbname=assignment_tracker';
