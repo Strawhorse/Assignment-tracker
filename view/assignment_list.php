@@ -34,17 +34,20 @@
                     <p class="bold">
                         <?=$assignment['courseName'] ?>
                     </p>
+                    <p><?=$assignment['Description'] ?></p>
                 </div>
+                </div class="list__removeItem">
+                    <form action="." method="post">
+                        <input type="hidden" name="action" value="delete_assignment">
+                        <input type="hidden" name="assignment_id" value=" <?=$assignment['ID'] ?>">
+                        <button class="remove-button">❌</button>
+                    </form>
+                </div>
+                  
             </div>
-    }
-
+        <?php endforeach; ?>
 
 </section>
-
-
-
-
-
 
 
 <?php include ('view/footer.php'); ?>
