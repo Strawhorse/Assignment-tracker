@@ -35,7 +35,7 @@
     }
 
 
-    // switch statement to handle routing; send specific data to the view
+    // switch statement to handle routing; send s pecific data tothe view
     // calling from the methods in the imported models we required at the start
 
     switch($action) {

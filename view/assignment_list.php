@@ -60,5 +60,9 @@
 
 </section>
 
+<section id="add" class="add">
+    
+</section>
+
 
 <?php include ('view/footer.php'); ?>
