@@ -46,6 +46,17 @@
                   
             </div>
         <?php endforeach; ?>
+        <?php  } else { ?>
+        <br>
+        <?php if($course_id) { ?>}
+            <p>No assignments exist for this course at present</p> 
+        <?php } else { ?>
+            <p>No assignments exist yet</p> 
+        <?php } ?>
+        <br>
+        <?php } ?>
+
+        <!-- close off if statement -->
 
 </section>
 
