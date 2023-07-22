@@ -57,10 +57,14 @@
         <?php } ?>
 
         <!-- close off if statement -->
-
 </section>
 
+
+<!-- create the add item form and the add category areas -->
+
 <section id="add" class="add">
+    
+    
     
 </section>
 
