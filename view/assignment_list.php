@@ -64,7 +64,19 @@
 
 <section id="add" class="add">
     
-    
+    <h2>Add Assignment</h2>
+    <form action="." method="post" id="add_form" class="add_form">
+        <input type="hidden" name="action" value="add_assignment">
+        <div class="add_inputs">
+
+            <label for="">Course</label>
+            <select name="course_id" required>
+                <option value="">Please select</option>
+                <?php foreach($courses as $course) : ?>
+                    <!-- 51 mins -->
+            </select>
+
+    </form>
     
 </section>
 
