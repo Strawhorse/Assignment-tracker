@@ -1,4 +1,5 @@
 <!-- this file is the controller for the application -->
+<!-- controller fully written in php -->
 
 <?php 
 
@@ -59,6 +60,31 @@
                 $error = "Invalid assignment data. Check all fields and retry";
                 include('view/error.php');
                 exit;
+            }
+            break;
+
+        case "delete_course":
+            if($course_id) {
+                try  {
+                    delete_course($course_id);
+                } catch (PDOException $e) {
+                    $error = "Cannot delete course if assignments exist";
+                    include('view/error.php');
+                    exit;
+                }
+                header("Location: .?action=list_courses");
+
+            }
+            break;
+
+
+        case "delete_assignment":
+            if($assignment_id) {
+                delete_assignment($assignment_id);
+                header("Location: .?course_id=$course_id");
+            } else {
+                $error = "Missing/invalid assignment ID";
+                include('view/error.php');
             }
             break;
 
